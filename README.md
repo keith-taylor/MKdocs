@@ -1,8 +1,10 @@
 # MKDocs
 
-Code from the below tutorial:
+Code from the below [Real Python tutorial](https://realpython.com/lessons/build-project-docs-mkdocs-overview/
+):
 
-https://realpython.com/lessons/build-project-docs-mkdocs-overview/
+![](img/MKDocs_Real_py.png)
+
 
 #### Installation
 
