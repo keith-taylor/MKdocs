@@ -1,0 +1,13 @@
+site_name: Calculation Docs
+
+theme:
+  name: "material"
+
+nav:
+  - Calculation Documentation: index.md
+  - Tutorials: tutorial.md
+  - How to Guides: how-to.md
+  - API ref: reference.md
+  - Background: explanation.md
+
+
