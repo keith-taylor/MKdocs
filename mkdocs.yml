@@ -1,13 +1,16 @@
+# mkdocs.yml
+
 site_name: Calculation Docs
 
 theme:
   name: "material"
 
+#plugins:
+ # - mkdocstrings
+
 nav:
-  - Calculation Documentation: index.md
-  - Tutorials: tutorial.md
-  - How to Guides: how-to.md
-  - API ref: reference.md
-  - Background: explanation.md
-
-
+  - Calculation Docs: index.md
+  - tutorials.md
+  - How-To Guides: how-to-guides.md
+  - reference.md
+  - explanation.md
