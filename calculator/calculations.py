@@ -22,7 +22,9 @@ Examples:
 
 """
 
-def add(a:float|int, b:float|int) -> float:
+from typing import Union
+
+def add(a: Union[float, int], b: Union[float|int]) -> float:
     """
     Computes and returns the sum of two numbers.
     
@@ -42,7 +44,7 @@ def add(a:float|int, b:float|int) -> float:
     
     return float(a+b) 
 
-def subtract(a:float|int, b:float|int) -> float:
+def subtract(a: Union[float, int], b: Union[float|int]) -> float: 
     """
     Compute and return the difference of two numbers.
     
@@ -62,7 +64,7 @@ def subtract(a:float|int, b:float|int) -> float:
     """
     return float(a-b) 
 
-def multiply(a:float|int, b:float|int) -> float:
+def multiply(a: Union[float, int], b: Union[float|int]) -> float:
     """
     Compute and return the product of two numbers.
     
@@ -81,7 +83,7 @@ def multiply(a:float|int, b:float|int) -> float:
         """
     return float(a*b) 
 
-def divide(a:float|int, b:float|int) -> float:
+def divide(a: Union[float, int], b: Union[float|int]) -> float:
     """
     Compute and return the quotient of two numbers.
     
