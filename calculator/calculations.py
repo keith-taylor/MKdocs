@@ -1,18 +1,12 @@
-#  calc functions
+# calculator/calculations.py
 
-"""
-Provides simple math calculations on two input variables (as either float or int).
+"""Provide several sample math calculations.
 
-The module conatins the following functions: 
-
-    - `add(a,b)` -- returns the sum of two numbers. 
-    - `subtract(a,b)` -- returns the difference of two numbers. 
-    - `multiply(a,b)` -- returns the product of two numbers. 
-    - `divide(a,b)` -- returns the quotent of two numbers. 
+This module allows the user to make mathematical calculations.
 
 Examples:
     >>> from calculator import calculations
-    >>> calculations.add(4,2)
+    >>> calculations.add(2, 4)
     6.0
     >>> calculations.multiply(2.0, 4.0)
     8.0
@@ -20,94 +14,96 @@ Examples:
     >>> divide(4.0, 2)
     2.0
 
+The module contains the following functions:
+- `add(a, b)` - Returns the sum of two numbers.
+- `subtract(a, b)` - Returns the difference of two numbers.
+- `multiply(a, b)` - Returns the product of two numbers.
+- `divide(a, b)` - Returns the quotient of two numbers.
 """
 
 from typing import Union
 
-def add(a: Union[float, int], b: Union[float|int]) -> float:
+def add(a: Union[float, int], b: Union[float, int]) -> float:
     """
-    Computes and returns the sum of two numbers.
-    
-    Args:
-        a : the first operand
-        b : the second operand
-      
-    Returns:
-        The sum of the two inputs. 
+    Compute and return the sum of two numbers.
 
     Examples:
-        >>> add(4, 2)
-        6.0
         >>> add(4.0, 2.0)
         6.0
-    """
-    
-    return float(a+b) 
+        >>> add(4, 2)
+        6.0
 
-def subtract(a: Union[float, int], b: Union[float|int]) -> float: 
-    """
-    Compute and return the difference of two numbers.
-    
     Args:
-        a : the first operand
-        b : the second operand
+        a : A number representing the first addend in the addition.
+        b : A number representing the second addend in the addition.
     
     Returns:
-        The difference between the first and second input. 
-    
-    Examples: 
-        >>> subtract(4, 2)
-        2.0
+        A number representing the arithmetic sum of `a` and `b`.
+    """
+    return float(a + b)
+
+def subtract(a: Union[float, int], b: Union[float, int]) -> float:
+    """
+    Calculate the difference of two numbers.
+
+    Examples:
         >>> subtract(4.0, 2.0)
         2.0
-        
-    """
-    return float(a-b) 
+        >>> subtract(4, 2)
+        2.0
 
-def multiply(a: Union[float, int], b: Union[float|int]) -> float:
+    Args:
+        a : A number representing the minuend in the subtraction.
+        b : A number representing the subtrahend in the subtraction.
+
+    Returns:
+        A number representing the difference between `a` and `b`.
+    """
+    return float(a - b)
+
+def multiply(a: Union[float, int], b: Union[float, int]) -> float:
     """
     Compute and return the product of two numbers.
-    
-    Args:
-        a : the first operand
-        b : the second operand
-    
-    Returns:
-        The product of the two inputs. 
 
-    Examples: 
-        >>> multiply(4, 2)
-        8.0
+    Examples:
         >>> multiply(4.0, 2.0)
         8.0
-        """
-    return float(a*b) 
+        >>> multiply(4, 2)
+        8.0
 
-def divide(a: Union[float, int], b: Union[float|int]) -> float:
+    Args:
+        a : A number representing the multiplicand in the multiplication.
+        b : A number representing the multiplier in the multiplication.
+
+    Returns:
+        A number representing the product of `a` and `b`.
+    """
+    return float(a * b)
+
+def divide(a: Union[float, int], b: Union[float, int]) -> float:
     """
     Compute and return the quotient of two numbers.
-    
-    Args:
-        a : the first operand (numerator)
-        b : the second operand (divisor)
-    
-    Returns:
-        The quotent of the two inputs. 
-    
-    Raises:
-        ZeroDivisionError: An error occurs when trying to divide by zero. 
-    
+
     Examples:
-        >>> divide(4, 2)
-        2.0
         >>> divide(4.0, 2.0)
+        2.0
+        >>> divide(4, 2)
         2.0
         >>> divide(4, 0)
         Traceback (most recent call last):
         ...
         ZeroDivisionError: division by zero
-    """
 
+    Args:
+        a : A number representing the dividend in the division.
+        b : A number representing the divisor in the division.
+
+    Returns:
+        A number representing the quotient of `a` and `b`.
+
+    Raises:
+        ZeroDivisionError: An error occurs when the divisor is `0`.
+    """
     if b == 0:
         raise ZeroDivisionError("division by zero")
-    return float(a/b) 
+    return float(a / b)

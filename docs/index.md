@@ -23,7 +23,7 @@ Quickly find what you're looking for depending on
 your use case by looking at the different pages.
 
 ## Project Overview
-::: calculator
+
 
 ## Acknowledgements
 

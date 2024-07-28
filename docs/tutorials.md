@@ -14,3 +14,6 @@ get started with the code in this project.
 - Show concrete examples, no abstractions
 - Provide the minimum necessary explanation
 - Avoid any distractions
+
+
+::: calculator.calculations
