@@ -1,5 +1,5 @@
 
-# MKDocs
+# MKDocs 
 
 Code from the below [Real Python tutorial](https://realpython.com/lessons/build-project-docs-mkdocs-overview/
 ):
@@ -7,11 +7,12 @@ Code from the below [Real Python tutorial](https://realpython.com/lessons/build-
 ![](img/MKDocs_Real_py.png)
 
 
-
 ### Installation
 
 Clone from: `git@github.com:keith-taylor/MKdocs.git`
 
+### Results 
+The completed documentation can be viewed [here](https://keith-taylor.github.io/MKdocs/). 
 
 ### Contact
 
@@ -23,7 +24,7 @@ Clone from: `git@github.com:keith-taylor/MKdocs.git`
 
 ### Issues Encountered
 
-1. Trying ro use `mkdocstrings` plug in didn't work. To do this I added
+1. Trying to use `mkdocstrings` plug in didn't work. To do this I added
     ```
     plugins:
      - mkdocstrings
@@ -57,7 +58,7 @@ Clone from: `git@github.com:keith-taylor/MKdocs.git`
     and now `mkdocs serve` works just fine.
     
 2. Now that I had this working I encountered another problem when trying to generate the Reference document: the docstrings were not importing. I encountered no errors and the pages were served just fine. I had to add the path to the plugin specification in the `.yml` file:
-    
+   
     ```
     plugins:
       - mkdocstrings:
@@ -66,7 +67,5 @@ Clone from: `git@github.com:keith-taylor/MKdocs.git`
               paths: [/home/my_name/my_code/MKdocs]
     ```
     
-    It looks like MKDocs couldn't find the files (I checked the folder layout and ille locations).
+    It looks like MKDocs couldn't find the files (I checked the folder layout and file locations).
 
-
- 
